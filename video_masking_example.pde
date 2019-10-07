@@ -1,7 +1,7 @@
 // Before importing video-library, you have to install it.
 // To install, select Sketch > Import Library > Add Library > Search 'Video' > Install
 import processing.video.*;
-// Create movie-object and image object.
+// Create Movie-object and PImage object for storing the video and the image.
 Movie myMovie;
 PImage mask;
 
@@ -9,7 +9,7 @@ void setup() {
   size(800, 720);
   // Video and the image are loaded from data-folder.
   // Video and the mask-image have to be the same size. 
-  // Both are 800 x 720 in this example
+  // Both are 800 x 720 in this example.
   myMovie = new Movie(this, "example.mp4");
   mask = loadImage("mask.png");
   // This is a setting: when video is over, it starts again from the first frame.
